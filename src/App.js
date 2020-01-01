@@ -4,7 +4,7 @@ function Food(props) {
   return (
     <div>
       <h1>I like {props.name}</h1>
-      <img src={props.img} />
+      <img src={props.img} alt={props.name} />
     </div>
   );
 }
@@ -31,6 +31,10 @@ const foodILike = [
     image: "https://w.namu.la/s/de004f02080e8355a89a6f62cc1698f812b0f4cf8abae0ff13e0c05d6d022640f12c355196ead9d99139e118751b38093123537517daaa72ffba1ff6f0ffd404400b75a8634ddd275f62b62a4f8c7adc33d0d0ebc06367c828183466455e8b03cb5d21c29e5cc04d9c509fdf5bd64e1b"
   }
 ];
+
+// function RenderFood(dish) {
+//   return <Food key={dish.id} name={dish.name} img={dish.image} />
+//}
 
 function App() {
   return (
